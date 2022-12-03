@@ -1,0 +1,23 @@
+Problem 2:
+95% CI = 760.22 +- 4.71
+
+Problem 5.A:
+95% CI = 190.0 +- 10.1
+
+Problem 5.B:
+ 95% CI = 0.0 +- 0.0
+
+------------
+1. What happens to the total population before introducing the antibiotic?
+	5.A - Increases steadily up to a max capacity
+	5.B - Increases then starts to decline as birth rate too low to keep up with population
+2. What happens to the resistant bacteria population before introducing the antibiotic?
+	5.A - Increases then starts to decline as birth rate too low to keep up with population
+	5.B - Increases then starts to decline as birth rate too low to keep up with population	
+3. What happens to the total population after introducing the antibiotic?
+	5.A - Declines all the way to num of resistant bacteria imediately
+	5.B - Declines all the way to num of resistant bacteria imediately
+4. What happens to the resistant bacteria population after introducing the antibiotic?
+	5.A - Slowly grows as resistant bacteria now have lower pop density to reproduce
+	5.B - Slowly decreases as resistant bacteria reproduction can't keep up with number of deaths,
+	      seems to converge to zero after ~250 steps

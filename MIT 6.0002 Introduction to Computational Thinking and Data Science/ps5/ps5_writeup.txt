@@ -1,0 +1,132 @@
+Problem A4:
+● What difference does choosing a specific day to plot the data for versus
+calculating the yearly average have on our graphs (i.e., in terms of the R2
+values and the fit of the resulting curves)? Interpret the results.
+	Choosing to average temps over the year decreases our spread, increasing R2 giving us a better fit, and
+	decreases the SE/slope ratio
+
+● Why do you think these graphs are so noisy? Which one is more noisy?
+	They're noisy becuase of the incredible daily fluctiations in temps, difficulties in measuring temp, and
+	time of day when temp was measured. The daily plot is more noisy since the yearly average plot has averaged
+	out some of the noise associated with temp variability.
+
+● How do these graphs support or contradict the claim that global warming is
+leading to an increase in temperature? The slope and the standard
+error-to-slope ratio could be helpful in thinking about this.
+	The second plot showing yearly averages shows a more convincing arguement that yearly temps are increasing
+	and not due to chance bassed on the SE/slope value.
+
+------------------------------------------------------------------------------------------------------------------
+
+Problem B:
+● How does this graph compare to the graphs from part A (i.e., in terms of
+the R2 values, the fit of the resulting curves, and whether the graph
+supports/contradicts our claim about global warming)? Interpret the
+results.
+	This graph has even less variablilty and greater R2 value and lower SE/slope value. This is because in
+	averaging yearly temps over many cities we can now control for regional fluctiations as well as daily
+	fluctiations in temps.
+
+● Why do you think this is the case?
+	We are now averaging regional fluctiations as well.
+
+● How would we expect the results to differ if we used 3 different cities?
+What about 100 different cities?
+	3 different cities may be too few to average out national temp differences. 100 cities would further
+	increase our R2 value by decreasing variability
+
+● How would the results have changed if all 21 cities were in the same region
+of the United States (for ex., New England)? 
+	Our results then would be pretty similar to Problem A4.II as we aren't really averaging out regional
+	fluctiations
+
+------------------------------------------------------------------------------------------------------------------
+
+Problem C:
+● How does this graph compare to the graphs from part A and B (i.e., in
+terms of the R2 values, the fit of the resulting curves, and whether the
+graph supports/contradicts our claim about global warming)? Interpret the
+results.
+	Here we have "smoothed" the data by taking a 5 year average. This further accounts for variability in temp
+	data. Our R2 value continues to rise and the SE/slope value decreases. This plot provides support
+	for an upward trend in global (or at least national) temperatures. It is convincing evidence for global
+	warming.
+
+● Why do you think this is the case? 
+	Because we've further smoothed the data and averaged out even more noise/variability.
+
+------------------------------------------------------------------------------------------------------------------
+
+Probelm D2.I:
+● How do these models compare to each other?
+	As the number of degree increases the R2 value keeps increasing.
+
+● Which one has the best R2? Why?
+	The degree 20 model but that is because we are allowing for too many degrees of freedom; we have overfit
+	the model
+
+● Which model best fits the data? Why? 
+	Since we know where this data comes from, I argue the degree 1 model best fits the data, but the empirical
+	answer is the 20 degree model.
+
+Problem D2.II:
+● How did the different models perform? How did their RMSEs compare?
+	The degree 1 model performed best with the lowest RMSE, the degree 2 model second, and degree 20 model
+	performed the worst.
+
+● Which model performed the best? Which model performed the worst? Are
+they the same as those in part D.2.I? Why?
+	Best = degree 1, Worst = degree 20. This is not the same as earlier because now we are looking at test data
+	The degree 20 model was overfitted and represented the training data well but could not predict test data
+	well.
+
+● If we had generated the models using the A.4.II data (i.e. average annual
+temperature of New York City) instead of the 5-year moving average over
+22 cities, how would the prediction results 2010-2015 have changed?
+	Probably not by too much. We would still see the same general trends amongst degree 1,2 and 20. However,
+	we may see poorer R2 and RMSE values because of increased spread of the data.
+
+------------------------------------------------------------------------------------------------------------------
+
+Problem E:
+● Does the result match our claim (i.e., temperature variation is getting
+larger over these years)?
+	No, in fact it shows temps are getting less varied ove these years.
+
+● Can you think of ways to improve our analysis? 
+	We can work on imrovng the R2 value by looking at more data or trying different models. Temperature
+	variability may be complex and non-linear. We could look at different degree models along with data from
+	more cities/regions to look for trends and improve R2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

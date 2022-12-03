@@ -1,0 +1,43 @@
+Problem A.5:
+1)What were your results from compare_cow_transport_algorithms? Which
+algorithm runs faster? Why?
+Greedy Algorithm determined 6 trips in 0.0 seconds.
+Brute Force Algorithm determined 5 trips in 0.5794239044189453 seconds.
+Greedy Algo runs faster because it only explores one branch in the search
+tree and quickly returns a optimal solution once found. Brute force must
+look at every possibility.
+
+2)Does the greedy algorithm return the optimal solution? Why/why not?
+No, it finds a local optimal because it fails to explore all branches
+of the search tree.
+
+3)Does the brute force algorithm return the optimal solution? Why/why not?
+Yes, because it has looked at all possible options and returned the 
+globally optimal solution
+
+
+-----------------------------------------------------------------------
+Problem B.2:
+1)Explain why it would be difficult to use a brute force algorithm to solve this problem if there
+were 30 different egg weights. You do not need to implement a brute force algorithm in order to
+answer this.
+If we use brute force for 30 unique weights we must check every single 
+different combinatation that resulted in the total weight using thouse
+30 unique weights. The total number of possibilities is enormous.
+
+2)If you were to implement a greedy algorithm for finding the minimum number of eggs
+needed, what would the objective function be? What would the constraints be? What strategy
+would your greedy algorithm follow to pick which coins to take? You do not need to implement a
+greedy algorithm in order to answer this.
+The objective function would be to minimize the number of eggs taken,
+the constraint is the total weight. Since this is a continuous knapsack
+problem (can always add 1 egg weight and only dealing with integer total
+weights) the best strategy is to take as many of the heaviest eggs that
+will fit, then take as many of the next heaviest that fit, and so on.
+
+3)Will a greedy algorithm always return the optimal solution to this problem? Explain why it is
+optimal or give an example of when it will not return the optimal solution. Again, you do not need
+to implement a greedy algorithm in order to answer this.
+Yes, because this is a continous knapsack problem a globally optimal
+solution is garunteed. We know the list of egg weights is sorted lowest
+to highest, so we always know the heaviest egg we can take.
